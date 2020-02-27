@@ -5,15 +5,14 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider, connect } from 'react-redux';
 import axios from 'axios';
 import axiosMiddleware from 'redux-axios-middleware';
+import * as myConstant from './src/common/constants';
 
 import reducer from './reducer';
-import RepoList from './RepoList';
 import Navigation from './Navigator'
-import {HomeScreen} from './Homecomponent';
 
 
 const client = axios.create({
-  baseURL: 'https://jsonplaceholder.typicode.com',
+  baseURL: myConstant.API,
   responseType: 'json'
 });
 

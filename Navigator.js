@@ -2,15 +2,15 @@
 import { StyleSheet } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
-import HomeScreen from './RepoList';
-import ThumbnailView from './thumbnailView';
-//import AlbumDetailsView from './src/component/AlbumDetailsComponent/albumDetailsView';
+import HomeScreen from './src/component/HomeComponent/home';
+import ThumbnailView from './src/component/ThumbnailComponent/thumbnailView';
+import AlbumDetailsView from './src/component/AlbumDetailsComponent/albumDetailsView';
 
 
 const MainNavigator = createStackNavigator({
     HomeScreen: { screen: HomeScreen },
     ThumbnailViewScreen: { screen: ThumbnailView },
-   // AlbumDetailsViewScreen: { screen: AlbumDetailsView },
+    AlbumDetailsViewScreen: { screen: AlbumDetailsView },
 },
 {
   defaultNavigationOptions: {
@@ -28,7 +28,6 @@ const NavigationApp = createAppContainer(MainNavigator);
 export default NavigationApp;
 
 // Styling
-// eslint-disable-next-line no-unused-vars
 const styles = StyleSheet.create({
 
   MainContainer: {
