@@ -29,3 +29,14 @@ export function listRepos(user) {
     }
   };
 }
+
+export function listThumb(albumId) {
+  return {
+    type: GET_REPOS,
+    payload: {
+      request: {
+        url: `/photos?albumId=${albumId}`
+      }
+    }
+  };
+}

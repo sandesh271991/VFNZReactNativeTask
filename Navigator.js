@@ -3,10 +3,14 @@ import { StyleSheet } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import HomeScreen from './RepoList';
+import ThumbnailView from './thumbnailView';
+//import AlbumDetailsView from './src/component/AlbumDetailsComponent/albumDetailsView';
 
 
 const MainNavigator = createStackNavigator({
-    HomeScreen: { screen: HomeScreen }
+    HomeScreen: { screen: HomeScreen },
+    ThumbnailViewScreen: { screen: ThumbnailView },
+   // AlbumDetailsViewScreen: { screen: AlbumDetailsView },
 },
 {
   defaultNavigationOptions: {

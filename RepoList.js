@@ -10,6 +10,12 @@ class RepoList extends Component {
   componentDidMount() {
     this.props.listRepos('relferreira');
   }
+
+
+  FlatListItemSeparator = () => (
+    <View style={styles.flatListItemSeparator} />
+)
+
   renderItem = ({ item }) => (
 
 <View style={styles.listRowContainer}>
@@ -32,6 +38,8 @@ class RepoList extends Component {
         styles={styles.container}
         data={repos}
         renderItem={this.renderItem} 
+        ItemSeparatorComponent = {this.FlatListItemSeparator}
+
       />
       </View>
     );
