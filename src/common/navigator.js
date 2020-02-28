@@ -2,9 +2,9 @@
 import { StyleSheet } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
-import HomeScreen from './src/component/HomeComponent/home';
-import ThumbnailView from './src/component/ThumbnailComponent/thumbnailView';
-import AlbumDetailsView from './src/component/AlbumDetailsComponent/albumDetailsView';
+import HomeScreen from '../component/HomeComponent/home';
+import ThumbnailView from '../component/ThumbnailComponent/thumbnailView';
+import AlbumDetailsView from '../component/AlbumDetailsComponent/albumDetailsView';
 
 
 const MainNavigator = createStackNavigator({

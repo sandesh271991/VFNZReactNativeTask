@@ -5,9 +5,9 @@ import {
 import { ActivityIndicator, Provider } from 'react-native-paper';
 import { connect } from 'react-redux';
 import styles from './style';
-import ErrorAlert from '../../common/ErrorAlertComponent/errorAlert';
+import ErrorAlert from '../../common/errorAlertComponent/errorAlert';
 import * as myConstant from '../../common/constants';
-import { listThumb } from '../../../reducer';
+import { listThumb } from '../../reducer/reducer';
 
 class Thumbnail extends Component {
 
@@ -31,13 +31,27 @@ class Thumbnail extends Component {
   );
 
   render() {
-    const { repos } = this.props;
+    const { error, loading, albums } = this.props;
+
+    if (error) {
+      return <ErrorAlert />;
+    }
+
+    if (loading) {
+      return (
+        <View style={{ flex: 1, paddingTop: 30 }}>
+            <ActivityIndicator animating={true} size='large' />
+        </View>
+      );
+    }
+
+
     return (
       <Provider>
         <View style={styles.listContainer} >
           <FlatList
             styles={styles.container}
-            data={repos}
+            data={albums}
             renderItem={this.renderItem}
             numColumns={3}
           />
@@ -48,9 +62,11 @@ class Thumbnail extends Component {
 }
 
 const mapStateToProps = state => {
-  let storedRepositories = state.repos.map(repo => ({ key: repo.id, ...repo }));
+  let storedRepositories = state.albums.map(repo => ({ key: repo.id, ...repo }));
   return {
-    repos: storedRepositories
+    albums: storedRepositories,
+    loading: state.loading,
+    error: state.error
   };
 };
 

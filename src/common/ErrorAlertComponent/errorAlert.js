@@ -2,7 +2,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import {  Text } from 'react-native-paper';
-import styles from '../../common/ErrorAlertComponent/style';
+import styles from './style';
 
 
 export default class ErrorAlert extends React.Component {

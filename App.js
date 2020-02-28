@@ -7,8 +7,8 @@ import axios from 'axios';
 import axiosMiddleware from 'redux-axios-middleware';
 import * as myConstant from './src/common/constants';
 
-import reducer from './reducer';
-import Navigation from './Navigator'
+import reducer from './src/reducer/reducer';
+import Navigation from './src/common/navigator'
 
 
 const client = axios.create({

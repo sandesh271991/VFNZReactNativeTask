@@ -4,8 +4,8 @@ import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native
 import { connect } from 'react-redux';
 import styles from '../HomeComponent/style';
 import { Ionicons } from '@expo/vector-icons';
-import { listRepos } from '../../../reducer';
-import ErrorAlert from '../../common/ErrorAlertComponent/errorAlert';
+import { listRepos } from '../../reducer/reducer';
+import ErrorAlert from '../../common/errorAlertComponent/errorAlert';
 
 
 class Home extends Component {
@@ -33,7 +33,7 @@ class Home extends Component {
     </View>
   );
   render() {
-    const { error, loading, products } = this.props;
+    const { error, loading, albums } = this.props;
 
     if (error) {
       return <ErrorAlert />;
@@ -46,12 +46,11 @@ class Home extends Component {
         </View>
       );
     }
-    const { repos } = this.props;
     return (
       <View style={styles.MainContainer} >
         <FlatList
           styles={styles.container}
-          data={repos}
+          data={albums}
           renderItem={this.renderItem}
           ItemSeparatorComponent={this.FlatListItemSeparator}
 
@@ -62,9 +61,9 @@ class Home extends Component {
 }
 
 const mapStateToProps = state => {
-  let storedRepositories = state.repos.map(repo => ({ key: repo.id.toString(), ...repo }));
+  let storedRepositories = state.albums.map(repo => ({ key: repo.id.toString(), ...repo }));
   return {
-    repos: storedRepositories, 
+    albums: storedRepositories, 
     loading: state.loading,
     error: state.error
   };
