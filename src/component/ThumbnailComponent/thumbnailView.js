@@ -45,7 +45,6 @@ class Thumbnail extends Component {
       );
     }
 
-
     return (
       <Provider>
         <View style={styles.listContainer} >
