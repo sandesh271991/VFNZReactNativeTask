@@ -21,7 +21,7 @@ class Thumbnail extends Component {
 
     <View style={styles.listRowContainer}>
       <TouchableOpacity onPress={() => this.props.navigation.navigate('AlbumDetailsViewScreen', {
-        albumTitle: item.title, albumImg: item.url
+        albumTitle: item.title, albumImg: item.url,
       })} style={styles.listRow}>
         <View style={styles.listTextNavVIew}>
           <Image source={{ uri: item.thumbnailUrl }} style={styles.imageViewContainer} />
@@ -60,17 +60,17 @@ class Thumbnail extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  let storedRepositories = state.albums.map(repo => ({ key: repo.id, ...repo }));
+const mapStateToProps = (state) => {
+  const storedRepositories = state.albums.map((repo) => ({ key: repo.id, ...repo }));
   return {
     albums: storedRepositories,
     loading: state.loading,
-    error: state.error
+    error: state.error,
   };
 };
 
 const mapDispatchToProps = {
-  listThumb
+  listThumb,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Thumbnail);
