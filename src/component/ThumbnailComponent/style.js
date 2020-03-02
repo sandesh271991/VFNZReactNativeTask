@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
- 
+
   listContainer: {
     marginTop: 10,
   },
@@ -36,7 +36,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     margin: 5,
     width: '100%',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
 
   imageViewContainer: {

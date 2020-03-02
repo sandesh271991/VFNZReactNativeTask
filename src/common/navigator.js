@@ -1,5 +1,3 @@
-// import React from 'react';
-import { StyleSheet } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import HomeScreen from '../component/HomeComponent/home';
@@ -8,9 +6,9 @@ import AlbumDetailsView from '../component/AlbumDetailsComponent/albumDetailsVie
 
 
 const MainNavigator = createStackNavigator({
-    HomeScreen: { screen: HomeScreen },
-    ThumbnailViewScreen: { screen: ThumbnailView },
-    AlbumDetailsViewScreen: { screen: AlbumDetailsView },
+  HomeScreen: { screen: HomeScreen },
+  ThumbnailViewScreen: { screen: ThumbnailView },
+  AlbumDetailsViewScreen: { screen: AlbumDetailsView },
 },
 {
   defaultNavigationOptions: {
@@ -26,19 +24,3 @@ const MainNavigator = createStackNavigator({
 
 const NavigationApp = createAppContainer(MainNavigator);
 export default NavigationApp;
-
-// Styling
-const styles = StyleSheet.create({
-
-  MainContainer: {
-    padding: 0,
-  },
-
-  detailNavArrow: {
-    width: 30,
-    minWidth: 30,
-    fontSize: 30,
-    marginLeft: 30,
-  },
-
-});

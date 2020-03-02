@@ -1,16 +1,20 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import { ActivityIndicator } from 'react-native-paper';
-import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
+import {
+  View, Text, FlatList, TouchableOpacity,
+} from 'react-native';
 import { connect } from 'react-redux';
-import styles from '../HomeComponent/style';
 import { Ionicons } from '@expo/vector-icons';
+import styles from './style';
 import { listRepos } from '../../reducer/reducer';
 import ErrorAlert from '../../common/errorAlertComponent/errorAlert';
 
 
 class Home extends Component {
   componentDidMount() {
-    this.props.listRepos('');
+    this.props.listRepos();
   }
 
   FlatListItemSeparator = () => (
@@ -32,6 +36,7 @@ class Home extends Component {
 
     </View>
   );
+
   render() {
     const { error, loading, albums } = this.props;
 
@@ -60,17 +65,17 @@ class Home extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  let storedRepositories = state.albums.map(repo => ({ key: repo.id.toString(), ...repo }));
+const mapStateToProps = (state) => {
+  const storedRepositories = state.albums.map((repo) => ({ key: repo.id.toString(), ...repo }));
   return {
-    albums: storedRepositories, 
+    albums: storedRepositories,
     loading: state.loading,
-    error: state.error
+    error: state.error,
   };
 };
 
 const mapDispatchToProps = {
-  listRepos
+  listRepos,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

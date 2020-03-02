@@ -17,6 +17,7 @@ import Navigation from './src/common/navigator';
 const client = axios.create({
   baseURL: myConstant.API,
   responseType: 'json',
+  timeout: 25000,
 });
 
 const store = createStore(reducer, applyMiddleware(axiosMiddleware(client)));

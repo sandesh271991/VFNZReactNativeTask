@@ -6,11 +6,11 @@ export const GET_ALBUM_FAIL = 'album/LOAD_FAIL';
 const initialState = {
   albums: [],
   loading: false,
-  error: null
+  error: null,
 };
 
 
-export default function reducer(state = initialState , action) {
+export default function reducer(state = initialState, action) {
   switch (action.type) {
     case GET_ALBUM:
       return { ...state, loading: true };
@@ -27,14 +27,14 @@ export default function reducer(state = initialState , action) {
   }
 }
 
-export function listRepos(photos) {
+export function listRepos() {
   return {
     type: GET_ALBUM,
     payload: {
       request: {
-        url: `photos/`
-      }
-    }
+        url: 'photos/',
+      },
+    },
   };
 }
 
@@ -43,8 +43,8 @@ export function listThumb(albumId) {
     type: GET_ALBUM,
     payload: {
       request: {
-        url: `photos?albumId=${albumId}`
-      }
-    }
+        url: `photos?albumId=${albumId}`,
+      },
+    },
   };
 }

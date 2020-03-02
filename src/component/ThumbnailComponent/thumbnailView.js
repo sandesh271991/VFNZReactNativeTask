@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import {
   FlatList, Text, View, Image, TouchableOpacity,
@@ -10,7 +11,6 @@ import * as myConstant from '../../common/constants';
 import { listThumb } from '../../reducer/reducer';
 
 class Thumbnail extends Component {
-
   componentDidMount() {
     const { navigation } = this.props;
     const albumId = navigation.getParam('albumID', 'no data');
