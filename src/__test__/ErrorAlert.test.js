@@ -1,11 +1,8 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-
 import React from 'react';
-import { shallow } from 'enzyme';
-import { configure } from 'enzyme';
-import __ErrorAlert from '../common/ErrorAlertComponent/errorAlert';
+import { shallow, configure } from 'enzyme';
+
 import Adapter from 'enzyme-adapter-react-16';
+import __ErrorAlert from '../common/ErrorAlertComponent/errorAlert';
 
 configure({ adapter: new Adapter() });
 

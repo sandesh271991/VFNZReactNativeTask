@@ -1,14 +1,14 @@
-/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import {
-  FlatList, Text, View, Image, TouchableOpacity,
+  FlatList, View, Image, TouchableOpacity,
 } from 'react-native';
 import { ActivityIndicator, Provider } from 'react-native-paper';
 import { connect } from 'react-redux';
 import styles from './style';
 import ErrorAlert from '../../common/errorAlertComponent/errorAlert';
-import * as myConstant from '../../common/constants';
 import { listThumb } from '../../reducer/reducer';
+import PropTypes from 'prop-types';
+
 
 class Thumbnail extends Component {
   componentDidMount() {
@@ -71,6 +71,14 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
   listThumb,
+};
+
+Thumbnail.propTypes = {
+  navigation: PropTypes.object.isRequired,
+  error: PropTypes.object,
+  loading: PropTypes.bool,
+  albums: PropTypes.array,
+  listThumb: PropTypes.func
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Thumbnail);

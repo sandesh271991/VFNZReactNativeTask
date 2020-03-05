@@ -55,6 +55,7 @@ Array [
                 "textAlign": "left",
               }
             }
+            testID="albumText"
           />
           <withTheme(Button)
             mode="contained"

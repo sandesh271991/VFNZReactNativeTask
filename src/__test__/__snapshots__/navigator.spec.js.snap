@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Album Details Screen should render initial layout 1`] = `
+Array [
+  <Context.Provider
+    value="light"
+  >
+    <Context.Provider
+      value={
+        Object {
+          "getParam": [MockFunction],
+        }
+      }
+    >
+      <Navigator
+        navigation={
+          Object {
+            "getParam": [MockFunction],
+          }
+        }
+        theme="light"
+      />
+    </Context.Provider>
+  </Context.Provider>,
+]
+`;

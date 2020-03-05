@@ -46,8 +46,8 @@ export default StyleSheet.create({
   },
 
   detailArrow: {
-    fontSize: 30,
-    marginRight: 5,
+    fontSize: 20,
+    padding: 5,
   },
 
 });

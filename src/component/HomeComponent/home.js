@@ -1,15 +1,15 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import { ActivityIndicator } from 'react-native-paper';
 import {
   View, Text, FlatList, TouchableOpacity,
 } from 'react-native';
 import { connect } from 'react-redux';
-import { Ionicons } from '@expo/vector-icons';
+// import { Ionicons } from '@expo/vector-icons';
 import styles from './style';
 import { listRepos } from '../../reducer/reducer';
 import ErrorAlert from '../../common/errorAlertComponent/errorAlert';
+import PropTypes from 'prop-types';
+
 
 
 class Home extends Component {
@@ -30,7 +30,7 @@ class Home extends Component {
       })} style={styles.listRow}>
         <View style={styles.listTextNavVIew}>
           <Text style={styles.albumTitle}> {item.title} </Text>
-          <Ionicons name='md-arrow-dropright' style={styles.detailArrow} />
+          {/* <Ionicons name='md-arrow-dropright' style={styles.detailArrow} /> */}
         </View>
       </TouchableOpacity>
 
@@ -76,6 +76,14 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
   listRepos,
+};
+
+Home.propTypes = {
+  navigation: PropTypes.object.isRequired,
+  error: PropTypes.object,
+  loading: PropTypes.bool,
+  albums: PropTypes.array,
+  listRepos: PropTypes.func
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

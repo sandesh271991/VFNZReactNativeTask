@@ -1,79 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1582888575707" clover="3.2.0">
-  <project timestamp="1582888575708" name="All files">
-    <metrics statements="56" coveredstatements="7" conditionals="13" coveredconditionals="0" methods="20" coveredmethods="2" elements="89" coveredelements="9" complexity="0" loc="56" ncloc="56" packages="6" files="11" classes="11"/>
+<coverage generated="1583410718989" clover="3.2.0">
+  <project timestamp="1583410718989" name="All files">
+    <metrics statements="59" coveredstatements="22" conditionals="13" coveredconditionals="2" methods="20" coveredmethods="3" elements="92" coveredelements="27" complexity="0" loc="59" ncloc="59" packages="6" files="12" classes="12"/>
     <package name="common">
-      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="constants.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/common/constants.js">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
       </file>
+      <file name="mockData.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/common/mockData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+      </file>
       <file name="navigator.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/common/navigator.js">
-        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
     </package>
     <package name="common.errorAlertComponent">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="errorAlert.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/common/errorAlertComponent/errorAlert.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="11" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
       </file>
       <file name="style.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/common/errorAlertComponent/style.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="component.AlbumDetailsComponent">
-      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="albumDetailsView.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/component/AlbumDetailsComponent/albumDetailsView.js">
-        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
+        <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
       </file>
       <file name="style.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/component/AlbumDetailsComponent/style.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="component.HomeComponent">
-      <metrics statements="16" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="0"/>
+      <metrics statements="17" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="0"/>
       <file name="home.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/component/HomeComponent/home.js">
-        <metrics statements="16" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
+        <metrics statements="17" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="17" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="63" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
       </file>
       <file name="style.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/component/HomeComponent/style.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="component.ThumbnailComponent">
-      <metrics statements="16" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <metrics statements="17" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
       <file name="style.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/component/ThumbnailComponent/style.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
       <file name="thumbnailView.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/component/ThumbnailComponent/thumbnailView.js">
-        <metrics statements="16" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <metrics statements="17" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
@@ -86,27 +91,28 @@
         <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="41" count="0" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
-        <line num="63" count="0" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
         <line num="64" count="0" type="stmt"/>
         <line num="65" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
+        <line num="72" count="2" type="stmt"/>
+        <line num="76" count="2" type="stmt"/>
       </file>
     </package>
     <package name="reducer">
-      <metrics statements="11" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="11" coveredstatements="6" conditionals="5" coveredconditionals="2" methods="3" coveredmethods="1"/>
       <file name="reducer.js" path="/Users/Sandesh/Desktop/Redux/VFNZAlbumPOC/src/reducer/reducer.js">
-        <metrics statements="11" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="14" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
+        <metrics statements="11" coveredstatements="6" conditionals="5" coveredconditionals="2" methods="3" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="13" count="2" type="cond" truecount="1" falsecount="3"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
       </file>
     </package>
   </project>

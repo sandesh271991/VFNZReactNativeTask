@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`INITIAL_STATE is correct 1`] = `
+Object {
+  "albums": Array [],
+  "error": null,
+  "loading": false,
+}
+`;
+
+exports[`post reducer is correct 1`] = `
+Object {
+  "albums": Array [],
+  "error": null,
+  "loading": false,
+}
+`;

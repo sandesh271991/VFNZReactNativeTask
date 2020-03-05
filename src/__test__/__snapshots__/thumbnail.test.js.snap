@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testpage Component should render initial layout 1`] = `
+Array [
+  <Context.Provider
+    value={
+      Object {
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "subscription": Subscription {
+          "handleChangeWrapper": [Function],
+          "listeners": Object {
+            "notify": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          },
+          "unsubscribe": null,
+        },
+      }
+    }
+  >
+    <Memo(Connect(Thumbnail)) />
+  </Context.Provider>,
+]
+`;
+
+exports[`Thumbnail Screen should render initial layout 1`] = `
+Array [
+  <Context.Provider
+    value={
+      Object {
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "subscription": Subscription {
+          "handleChangeWrapper": [Function],
+          "listeners": Object {
+            "notify": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          },
+          "unsubscribe": null,
+        },
+      }
+    }
+  >
+    <Memo(Connect(Thumbnail)) />
+  </Context.Provider>,
+]
+`;

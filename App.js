@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-use-before-define */
-/* eslint-disable class-methods-use-this */
 
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
@@ -17,7 +14,7 @@ import Navigation from './src/common/navigator';
 const client = axios.create({
   baseURL: myConstant.API,
   responseType: 'json',
-  timeout: 25000,
+  timeout: myConstant.TIMEOUT,
 });
 
 const store = createStore(reducer, applyMiddleware(axiosMiddleware(client)));
